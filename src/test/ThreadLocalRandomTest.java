@@ -1,6 +1,5 @@
 package test;
 
-import org.apache.commons.lang.time.StopWatch;
 
 import java.io.IOException;
 import java.lang.ref.WeakReference;
