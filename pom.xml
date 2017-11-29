@@ -18,8 +18,6 @@
     </properties>
 
     <build>
-
-        <finalName>marketing-activity</finalName>
         <resources>
             <resource>
                 <directory>src/main/resources</directory>
@@ -95,14 +93,6 @@
             <url>http://mirrors.ibiblio.org/pub/mirrors/maven2</url>
         </repository>
         <repository>
-            <id>apache-snapshots</id>
-            <url>http://dev.hd.sohu.com.cn/nexus/content/repositories/apache-snapshots/</url>
-        </repository>
-        <repository>
-            <id>dev.hd.sohu.com.cn</id>
-            <url>http://dev.hd.sohu.com.cn/nexus/content/groups/public/</url>
-        </repository>
-        <repository>
             <id>spring-maven-release</id>
             <name>Spring Maven Release Repository</name>
             <url>http://maven.springframework.org/release</url>
@@ -116,21 +106,6 @@
             <id>jboss-maven-release</id>
             <name>JBoss Maven Release</name>
             <url>https://repository.jboss.org/nexus/content/repositories/releases/</url>
-        </repository>
-        <repository>
-            <id>sohu.nexus</id>
-            <url>http://index.tv.sohuno.com/nexus/content/groups/public</url>
-        </repository>
-        <repository>
-            <id>3rdparty</id>
-            <url>http://dev.hd.sohu.com.cn/nexus/content/repositories/3rdparty</url>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-        </repository>
-        <repository>
-            <id>Snapshots</id>
-            <url>http://dev.hd.sohu.com.cn/nexus/content/repositories/snapshots/</url>
         </repository>
     </repositories>
 
@@ -456,52 +431,7 @@
             </exclusions>
         </dependency>
 
-        <!-- sohu spaces -->
-        <dependency>
-            <groupId>com.sohu.spaces</groupId>
-            <artifactId>spaces-sms-core</artifactId>
-            <version>1.0.2</version>
-            <exclusions>
-                <exclusion>
-                    <artifactId>spring</artifactId>
-                    <groupId>org.springframework</groupId>
-                </exclusion>
-            </exclusions>
-        </dependency>
-        <dependency>
-            <groupId>com.sohu.spaces</groupId>
-            <artifactId>spaces-user-core</artifactId>
-            <version>1.2.2-SNAPSHOT</version>
-            <exclusions>
-                <exclusion>
-                    <artifactId>spring</artifactId>
-                    <groupId>org.springframework</groupId>
-                </exclusion>
-                <exclusion>
-                    <artifactId>com.sohu.blog</artifactId>
-                    <groupId>blog-base-core</groupId>
-                </exclusion>
-                <exclusion>
-                    <artifactId>hibernate-annotations</artifactId>
-                    <groupId>org.hibernate</groupId>
-                </exclusion>
-            </exclusions>
-        </dependency>
-        <dependency>
-            <groupId>com.sohu.spaces</groupId>
-            <artifactId>spaces-content-core</artifactId>
-            <version>1.2.0-SNAPSHOT</version>
-            <exclusions>
-                <exclusion>
-                    <artifactId>hibernate-annotations</artifactId>
-                    <groupId>org.hibernate</groupId>
-                </exclusion>
-                <exclusion>
-                    <artifactId>spring</artifactId>
-                    <groupId>org.springframework</groupId>
-                </exclusion>
-            </exclusions>
-        </dependency>
+
         <dependency>
             <groupId>org.springframework.data</groupId>
             <artifactId>spring-data-mongodb</artifactId>
